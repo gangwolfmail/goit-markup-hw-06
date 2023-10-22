@@ -30,6 +30,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -189,8 +191,8 @@ ul {
 
 .hero-section {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -204,17 +206,23 @@ ul {
 }
 
 .hero-title {
+  max-width: 200px;
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
-  max-width: 496px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .hero-button {
+  letter-spacing: 0.04em;
+  display: block;
+  padding: 16px 32px;
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -224,7 +232,6 @@ ul {
   background-color: #4d5ae5;
   text-align: center;
   cursor: pointer;
-  letter-spacing: 0.64px;
   padding: 16px 32px;
   display: block;
   border-radius: 4px;
@@ -307,35 +314,14 @@ ul {
 
 .third {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.ul-section-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  /* padding-bottom: 48px; */
-}
-
-.li-section-portfolio {
-  text-align: left;
-  background: #fff;
-  width: calc((100% - 48px) / 3);
-}
-
-.main-portfolio-text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-section {
-  color: #2e2f42;
+  /* color: #2e2f42;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -343,20 +329,37 @@ ul {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   background-color: #f4f4fd;
+  margin-bottom: 72px; */
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.002em;
+  text-transform: capitalize;
   margin-bottom: 72px;
 }
 
 .ul-teams-name {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
 }
 
+/* .team-image {
+  margin: 0 auto;
+  /* width: 100%;
+} */
+
 .teams-name {
+  /* width: 100%; */
   background-color: #ffffff;
   color: #fff;
-  background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -420,8 +423,8 @@ ul {
 /**=============== Section Portfolio================= */
 
 .section-main-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-portfolio {
@@ -434,6 +437,36 @@ ul {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
+.ul-section-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  /* column-gap: 24px;
+  row-gap: 48px; */
+}
+
+.li-section-portfolio {
+  text-align: left;
+  background: #fff;
+  width: 100%;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.main-portfolio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-name {
   color: #2e2f42;
   font-size: 20px;
@@ -908,6 +941,15 @@ ul {
     max-width: 768px;
     /* outline: 2px solid red; */
   }
+  /* 
+  .third > .container {
+    max-width: 736px;
+  } */
+
+  .hero-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
 
   .li-strategy-title {
     width: calc((100% - 24px) / 2);
@@ -920,6 +962,22 @@ ul {
   .strategy-title {
     text-align: left;
   }
+
+  /* .teams-name {
+    width: calc((100% - 24px) / 2);
+  } */
+
+  .ul-teams-name {
+    gap: 64px 24px;
+  }
+
+  .ul-section-portfolio {
+    gap: 72px 24px;
+  }
+
+  .li-section-portfolio {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -927,6 +985,18 @@ ul {
     /* width: 1158px; */
     max-width: 1158px;
     /* outline: 2px solid red; */
+  }
+
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
   }
 
   /** ==========Strategy-section==========*/
@@ -959,4 +1029,34 @@ ul {
   }
 
   /** =============================== */
+
+  /**=========third section===========*/
+  .ul-teams-name {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .teams-name {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .third {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* *===================================== */
+
+  .section-main-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .ul-section-portfolio {
+    gap: 48px 24px;
+  }
+
+  .li-section-portfolio {
+    width: calc((100% - 48px) / 3);
+  }
 }
